@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6594E7E27F9B00B00C4C5A7 /* libimobiledevice-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6594E7D27F9B00B00C4C5A7 /* libimobiledevice-1.0.a */; };
+		B6594E8027F9B01700C4C5A7 /* libusbmuxd-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6594E7F27F9B01700C4C5A7 /* libusbmuxd-2.0.a */; };
+		B6594E8227F9B04300C4C5A7 /* libplist-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6594E8127F9B04300C4C5A7 /* libplist-2.0.a */; };
 		F66BDBDB1E8B857600102EBF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F66BDBDA1E8B857600102EBF /* main.mm */; };
-		F66BDC5E1E8B859300102EBF /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66BDBEC1E8B859300102EBF /* libimobiledevice.a */; };
-		F66BDC5F1E8B859300102EBF /* libusbmuxd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66BDBEF1E8B859300102EBF /* libusbmuxd.a */; };
 		F66BDC601E8B859300102EBF /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66BDC1D1E8B859300102EBF /* libcrypto.a */; };
 		F66BDC611E8B859300102EBF /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66BDC1E1E8B859300102EBF /* libssl.a */; };
-		F66BDC621E8B859300102EBF /* libplist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F66BDC4F1E8B859300102EBF /* libplist.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6594E7D27F9B00B00C4C5A7 /* libimobiledevice-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libimobiledevice-1.0.a"; path = "PrivateiOSDeviceConsole/libs/libimobiledevice/libimobiledevice-1.0.a"; sourceTree = "<group>"; };
+		B6594E7F27F9B01700C4C5A7 /* libusbmuxd-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libusbmuxd-2.0.a"; path = "PrivateiOSDeviceConsole/libs/libimobiledevice/libusbmuxd/libusbmuxd-2.0.a"; sourceTree = "<group>"; };
+		B6594E8127F9B04300C4C5A7 /* libplist-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplist-2.0.a"; path = "PrivateiOSDeviceConsole/libs/libimobiledevice/plist/libplist-2.0.a"; sourceTree = "<group>"; };
 		F66BDBD71E8B857600102EBF /* PrivateiOSDeviceConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PrivateiOSDeviceConsole; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66BDBDA1E8B857600102EBF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		F66BDBE31E8B859300102EBF /* afc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = afc.h; sourceTree = "<group>"; };
@@ -157,10 +160,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6594E8227F9B04300C4C5A7 /* libplist-2.0.a in Frameworks */,
+				B6594E8027F9B01700C4C5A7 /* libusbmuxd-2.0.a in Frameworks */,
+				B6594E7E27F9B00B00C4C5A7 /* libimobiledevice-1.0.a in Frameworks */,
 				F66BDC611E8B859300102EBF /* libssl.a in Frameworks */,
-				F66BDC621E8B859300102EBF /* libplist.a in Frameworks */,
-				F66BDC5F1E8B859300102EBF /* libusbmuxd.a in Frameworks */,
-				F66BDC5E1E8B859300102EBF /* libimobiledevice.a in Frameworks */,
 				F66BDC601E8B859300102EBF /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,11 +171,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6594E7C27F9B00B00C4C5A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6594E8127F9B04300C4C5A7 /* libplist-2.0.a */,
+				B6594E7F27F9B01700C4C5A7 /* libusbmuxd-2.0.a */,
+				B6594E7D27F9B00B00C4C5A7 /* libimobiledevice-1.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F66BDBCE1E8B857600102EBF = {
 			isa = PBXGroup;
 			children = (
 				F66BDBD91E8B857600102EBF /* PrivateiOSDeviceConsole */,
 				F66BDBD81E8B857600102EBF /* Products */,
+				B6594E7C27F9B00B00C4C5A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -378,7 +392,7 @@
 		F66BDBCF1E8B857600102EBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = sunjianwen;
 				TargetAttributes = {
 					F66BDBD61E8B857600102EBF = {
@@ -390,10 +404,11 @@
 			};
 			buildConfigurationList = F66BDBD21E8B857600102EBF /* Build configuration list for PBXProject "PrivateiOSDeviceConsole" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F66BDBCE1E8B857600102EBF;
 			productRefGroup = F66BDBD81E8B857600102EBF /* Products */;
@@ -421,20 +436,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -468,20 +493,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -507,6 +542,8 @@
 		F66BDBDF1E8B857600102EBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = TNEM938TK5;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,6 +552,7 @@
 					"$(PROJECT_DIR)/PrivateiOSDeviceConsole/libs/libimobiledevice/openssl",
 					"$(PROJECT_DIR)/PrivateiOSDeviceConsole/libs/libimobiledevice/plist",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -522,6 +560,8 @@
 		F66BDBE01E8B857600102EBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = TNEM938TK5;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,6 +570,7 @@
 					"$(PROJECT_DIR)/PrivateiOSDeviceConsole/libs/libimobiledevice/openssl",
 					"$(PROJECT_DIR)/PrivateiOSDeviceConsole/libs/libimobiledevice/plist",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -553,6 +594,7 @@
 				F66BDBE01E8B857600102EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
